@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #9b9cff;
+  color: #222;
+  font-family: "Futura", sans-serif;
+  font-size: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  color: #032cb6;
+  font-size: 2.5rem;
+  opacity: 0.4;
+}
+
+.container {
+  position: relative;
+  background-color: #c1c2ff;
+  border-radius: 0.5rem;
+  box-shadow: 2px 4px 6px rgba(14, 14, 14, 0.18);
+  padding: 0.8rem;
+  margin-top: 1rem;
+  max-width: 100%;
+  width: 300px;
+}
+
+#enter-todo {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #0034dd;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 0.4rem;
+  width: 100%;
+}
+
+#enter-todo::placeholder {
+  color: #444;
+}
+
+.todo-items {
+  list-style: none;
+  color: #222;
+  cursor: pointer;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 20px 10px;
+  text-align: left;
+}
+
+.todo-items > li {
+  padding: 2px;
+}
+
+#add-button {
+  position: absolute;
+  border: none;
+  border-radius: 1rem;
+  background-color: #292199;
+  color: #fff;
+  font-size: 1.5rem;
+  bottom: -1.25rem;
+  left: 6.25rem;
+  height: 40px;
+  width: 100px;
+}
+
+.instructions {
+  color: #444;
+  font-style: italic;
+  margin-top: 50px;
+}
+
+.todo-items li.executed {
+  color: #686868;
+  text-decoration: line-through;
+}
